@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    <title>Momo's Pizza</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Momo's Pizza</h1>
+        <div id="contact-us">
+          <p>123 Pepperoni Way | Seattle, WA 98101 | 206.555.8080</p>
+        </div>
+        <div class="about-pizza">
+          <h2>Welcome to Momo's Pizza!</h2>
+          <p>All pizzas are made-to-order and topped with our original tomato based sauce and mozzarella cheese. </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <h1>Order Form</h1>
+        <div class="col-md-5">
+          <form id="pizza-order">
+
+            <div id="choose-size">
+              <h3>Choose your size:</h3>
+              <select class="form-control" id="pizza-size">
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+              </select>
+            </div>
+
+            <div id="add-toppings">
+              <h3>Choose your  toppings:</h3>
+              <div class="add-toppings">
+                <select class="form-control" id="toppings">
+                  <option value="Pepperoni">Pepperoni</option>
+                  <option value="Mushrooms">Mushrooms</option>
+                  <option value="Bacon">Bacon</option>
+                  <option value="Pineapple">Pineapple</option>
+                  <option value="Ham">Ham</option>
+                  <option value="Garlic">Garlic</option>
+                  <option value="Onions">Onion</option>
+                  <option value="Basil">Basil</option>
+                  <option value="Anchovies">Anchovies</option>
+                  <option value="Extra Cheese">Extra Cheese</option>
+                </select>
+              </div>
+            </div>
+
+            <span class="btn" id="more-toppings">Add more toppings</span>
+
+            <div class="form-group">
+              <h3>Special Requests:</h3>
+              <textarea class="form-control" rows="5" id="requests"></textarea>
+            </div>
+
+            <div class="contact-info">
+              <h3>Contact Information</h3>
+              <div class="form-group">
+                <label for="new-name">Name:</label>
+                <input type="text" class="form control" id="new-name">
+              </div>
+              <div class="form-group">
+                <label for="new-email">Email:</label>
+                <input type="text" class="form control" id="new-email">
+              </div>
+              <div class="form-group">
+                <label for="new-phone">Phone Number:</label>
+                <input type="text" class="form control" id="new-phone">
+              </div>
+            </div>
+
+            <button type="submit" class="btn">Submit Order</button>
+          </form>
+        </div>
+
+        <div class="col-md-1">
+        </div>
+
+        <div class="col-md-5">
+          <div id="order-details">
+            <h2>Order Confirmation</h2>
+            <h3><span class="user-name"></span>, thank you for your order!</h3>
+            <ul>
+              <li>Pizza Size: <span class="size-ordered"></span></li>
+              <li>Toppings: <span class="toppings-ordered"></span></li>
+              <li>Special Requests: <span class="special-requests"></span></li>
+              <li>Total: $<span class="order-total"></span>.00</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

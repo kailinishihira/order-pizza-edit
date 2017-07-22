@@ -1,0 +1,48 @@
+body {
+background-image: url(../img/pizza.jpg);
+background-repeat: no-repeat;
+background-size: 100%;
+font-family: 'Zilla Slab', serif;
+}
+
+.jumbotron {
+  background-color: transparent;
+  background-color: rgba(255,255,255, 0.5);
+  text-align: center;
+}
+
+.jumbotron h1 {
+  font-size: 100px;
+  letter-spacing: 6px;
+}
+
+#contact-us {
+  text-align: center;
+}
+
+#order-details {
+  display: none;
+}
+
+.btn {
+  margin: 20px;
+}
+
+.row {
+  background-color: rgba(255,255,255, 0.5);
+  font-weight: bold;
+}
+
+.row h1 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 22px;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+}
